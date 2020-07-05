@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="css/style1.css" rel = "stylesheet"/>
+    <script src="js/script.js"></script>
+      
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="img/logo.jpg">
+            </div>
+            <ul>
+                <li><a href="home.htm">Home</a></li>
+                <li class = "active"><a href="calculator.htm">Calculator</a></li>
+                <li><a href="tutorial.htm">Tutorial</a></li>
+            </ul>
+        </div>
+
+        <p id=myPara></p>
+        <p id=myAns>0</p>
+            
+            <div class="cal_title">
+                <table>      
+                    <tr>
+                        <td colspan=5><input id=result readonly></td>
+                    </tr>  
+                    <tr>
+                    <td onclick="shiftFn(1)" id=shiftBtn>Shift</td>
+                    <td onclick="trigo('sin')" id=shiftBtn>sin</td>
+                    <td onclick="trigo('cos')" id=shiftBtn>cos</td>
+                    <td onclick="trigo('tan')" id=shiftBtn>tan</td>
+                    <td onclick="input('!')" id=shiftBtn>!</td>
+                    </tr>
+                    
+                    <tr>
+                    <td onclick="input('^(')" id=shiftBtn>^</td>
+                    <td onclick="sqrt()" id=shiftBtn>sqrt</td>
+                    <td onclick="leftParen()" id=shiftBtn>(</td>
+                    <td onclick="input(')')" id=shiftBtn>)</td>
+                    <td onclick="log(1)" id=shiftBtn>log</td>
+                    </tr>
+                    
+                    <tr>
+                    <td onclick="input('7')" id=shiftBtn>7</td>
+                    <td onclick="input('8')" id=shiftBtn>8</td>
+                    <td onclick="input('9')" id=shiftBtn>9</td>
+                    <td onclick="del()" id=shiftBtn>DEL</td>
+                    <td onclick="ac()" id=shiftBtn>AC</td>
+                    </tr>
+                    
+                    <tr>
+                    <td onclick="input('4')" id=shiftBtn>4</td>
+                    <td onclick="input('5')" id=shiftBtn>5</td>
+                    <td onclick="input('6')" id=shiftBtn>6</td>
+                    <td onclick="multOrDiv('mult')" id=shiftBtn>&#x00D7;</td>
+                    <td onclick="multOrDiv('div')" id=shiftBtn>&#x00F7;</td>
+                    </tr>
+                    
+                    <tr>
+                    <td onclick="input('1')" id=shiftBtn>1</td>
+                    <td onclick="input('2')" id=shiftBtn>2</td>
+                    <td onclick="input('3')" id=shiftBtn>3</td>
+                    <td onclick="input('+')" id=shiftBtn>+</td>
+                    <td onclick="input('-')" id=shiftBtn>-</td>
+                    </tr>
+                    
+                    <tr>
+                    <td onclick="input('0')" id=shiftBtn>0</td>
+                    <td onclick="input('.')" id=shiftBtn>.</td>
+                    <td onclick="piOrE('pi')"id=shiftBtn>&#x03C0;</td>
+                    <td onclick="ans()" id=shiftBtn>Ans</td>
+                    <td onclick="equal()" id=shiftBtn>=</td>
+                    </tr>
+                </div>
+    </header>
+</body>
+</html>
